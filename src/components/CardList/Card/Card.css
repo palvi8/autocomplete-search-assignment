@@ -24,3 +24,14 @@
     font-style: italic;
     font-size: 14px;
 }
+
+@media (max-width:480px)  {
+    .card {
+       width: 100%;
+    }
+}
+@media (min-width:801px)  { 
+    .card {
+        width: calc(50% - 25px);
+    }
+}

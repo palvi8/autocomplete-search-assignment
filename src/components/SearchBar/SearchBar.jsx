@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from 'prop-types';
 import "./SearchBar.css"
 
 const SearchBar = ({handleValue, resetValue}) => {
@@ -34,6 +35,16 @@ useEffect(() =>{
       />
     </div>
   );
+};
+
+SearchBar.defaultProps = {
+  handleValue: () => {},
+  resetValue: false,
+};
+
+SearchBar.propTypes = {
+  handleValue: PropTypes.func,
+  resetValue: PropTypes.bool,
 };
 
 export default SearchBar;

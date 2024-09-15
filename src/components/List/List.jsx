@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 import { getTitles, getSummaries } from "../../utils/utils";
 import "./List.css";
 
@@ -65,6 +66,18 @@ const List = ({ searchedValue, selectedList, resetValue }) => {
   ) : (
     <></>
   );
+};
+
+List.defaultProps = {
+  searchedValue: undefined,
+  selectedList: () => {},
+  resetValue: false,
+};
+
+List.propTypes = {
+  searchedValue: PropTypes.string,
+  selectedList: PropTypes.func,
+  resetValue: PropTypes.bool,
 };
 
 export default List;

@@ -27,4 +27,3 @@ Develop an autocomplete search feature that predicts and suggests possible searc
 
 # Setup:
 - To start the App run npm start
-- Server will run at http://localhost:1234

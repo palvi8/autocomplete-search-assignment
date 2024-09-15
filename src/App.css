@@ -5,3 +5,9 @@
     padding: 20px 150px;
     font-family: "Raleway", sans-serif;
 }
+
+@media (max-width:480px)  {
+    .app-layout {
+        padding: 20px 40px;
+    }
+}

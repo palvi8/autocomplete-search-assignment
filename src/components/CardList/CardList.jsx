@@ -1,4 +1,5 @@
 import React,{useEffect, useState} from "react";
+import PropTypes from 'prop-types';
 import Card from "./Card/Card";
 import { getAuthors, getSummaries } from "../../utils/utils";
 import "./CardList.css";
@@ -31,5 +32,13 @@ const CardList = ({selectedTitle}) => {
 
     )
 }
+
+CardList.defaultProps = {
+    selectedTitle: {}
+  };
+  
+CardList.propTypes = {
+selectedTitle: PropTypes.object
+};
 
 export default CardList;
